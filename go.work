@@ -1,0 +1,8 @@
+go 1.25
+
+use (
+	assertions/lib
+	assertions/impl/validator/playground
+	converter/lib
+	serror/lib
+)
