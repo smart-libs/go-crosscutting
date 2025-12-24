@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 	"github.com/go-playground/validator/v10"
+	assertions "github.com/smart-libs/go-crosscutting/assertions/lib/pkg"
 	"github.com/smart-libs/go-crosscutting/serror/lib/pkg"
-	assertions "githup.com/smart-libs/go-crosscutting/assertions/lib/pkg"
 )
 
 func wrapError(objectNameToBeValidated string, val any, err error) error {

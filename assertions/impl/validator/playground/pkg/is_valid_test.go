@@ -3,9 +3,9 @@ package playground
 import (
 	"errors"
 	"github.com/joomcode/errorx"
+	assertions "github.com/smart-libs/go-crosscutting/assertions/lib/pkg"
 	serror "github.com/smart-libs/go-crosscutting/serror/lib/pkg"
 	"github.com/stretchr/testify/assert"
-	assertions "githup.com/smart-libs/go-crosscutting/assertions/lib/pkg"
 	"testing"
 )
 

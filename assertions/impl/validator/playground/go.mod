@@ -1,11 +1,11 @@
-module githup.com/smart-libs/go-crosscutting/assertions/impl/validator/playground
+module github.com/smart-libs/go-crosscutting/assertions/impl/validator/playground
 
 go 1.24.0
 
 require (
-	github.com/go-playground/validator/v10 v10.29.0
-	github.com/smart-libs/go-crosscutting/assertions/lib v0.0.0
-	github.com/smart-libs/go-crosscutting/serror/lib v0.0.0
+	github.com/go-playground/validator/v10 v10.30.1
+	github.com/smart-libs/go-crosscutting/assertions/lib v0.0.5
+	github.com/smart-libs/go-crosscutting/serror/lib v0.0.1
 )
 
 require (
@@ -17,7 +17,3 @@ require (
 	golang.org/x/sys v0.39.0 // indirect
 	golang.org/x/text v0.32.0 // indirect
 )
-
-replace github.com/smart-libs/go-crosscutting/serror/lib => ./../../../../serror/lib
-
-replace github.com/smart-libs/go-crosscutting/assertions/lib => ../../../../assertions/lib

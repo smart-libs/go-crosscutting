@@ -3,7 +3,7 @@ package playground
 import (
 	"fmt"
 	"github.com/go-playground/validator/v10"
-	assertions "githup.com/smart-libs/go-crosscutting/assertions/lib/pkg"
+	assertions "github.com/smart-libs/go-crosscutting/assertions/lib/pkg"
 	"reflect"
 )
 

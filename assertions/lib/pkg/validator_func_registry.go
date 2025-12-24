@@ -2,8 +2,8 @@ package assertions
 
 import (
 	"fmt"
+	"github.com/smart-libs/go-crosscutting/assertions/lib/pkg/check"
 	"github.com/smart-libs/go-crosscutting/serror/lib/pkg"
-	"githup.com/smart-libs/go-crosscutting/assertions/lib/pkg/check"
 	"reflect"
 )
 
