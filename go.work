@@ -5,4 +5,6 @@ use (
 	assertions/impl/validator/playground
 	converter/lib
 	serror/lib
+	types/lib
+	types/impl/decimal/shopspring
 )
