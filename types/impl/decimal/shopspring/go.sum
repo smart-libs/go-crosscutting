@@ -10,3 +10,5 @@ github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINE
 github.com/shopspring/decimal v0.0.0-20180709203117-cd690d0c9e24/go.mod h1:M+9NzErvs504Cn4c5DxATwIqPbtswREoFCre64PpcG4=
 github.com/shopspring/decimal v1.4.0 h1:bxl37RwXBklmTi0C79JfXCEBD1cqqHt0bbgBAGFp81k=
 github.com/shopspring/decimal v1.4.0/go.mod h1:gawqmDU56v4yIKSwfBSFip1HdCCXN8/+DMd9qYNcwME=
+github.com/smart-libs/go-crosscutting/types/lib v0.0.1 h1:bgx5iT0bv/XOwo8dv9khsL7czUcq9claW6rpNqjqs6M=
+github.com/smart-libs/go-crosscutting/types/lib v0.0.1/go.mod h1:BucBEqRgaD3G4D1Z6/TNP+MbLk+ZNvhIGFyutLAzfT8=
