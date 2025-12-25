@@ -1,7 +1,7 @@
 package tests
 
-//go:generate mockgen -destination=./event_notifier_mock.go -package=tests github.com/smart-libs/go-interfaces/pkg/smart/interfaces/transaction EventNotifier
-//go:generate mockgen -destination=./event_notifier_factory_mock.go -package=tests github.com/smart-libs/go-interfaces/pkg/smart/interfaces/transaction EventNotifierFactory
+//go:generate mockgen -destination=./event_notifier_mock.go -package=tests github.com/smart-libs/go-crosscutting/transaction/spec/lib/pkg EventNotifier
+//go:generate mockgen -destination=./event_notifier_factory_mock.go -package=tests github.com/smart-libs/go-crosscutting/transaction/spec/lib/pkg EventNotifierFactory
 
 import (
 	"errors"

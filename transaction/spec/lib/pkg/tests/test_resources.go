@@ -1,6 +1,6 @@
 package tests
 
-//go:generate mockgen -destination=./resource_mock.go -package=tests github.com/smart-libs/go-interfaces/pkg/smart/interfaces/transaction Resource
+//go:generate mockgen -destination=./resource_mock.go -package=tests github.com/smart-libs/go-crosscutting/transaction/spec/lib/pkg Resource
 
 import (
 	"github.com/smart-libs/go-crosscutting/transaction/spec/lib/pkg"

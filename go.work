@@ -9,4 +9,5 @@ use (
 	transaction/spec/lib
 	types/lib
 	types/impl/decimal/shopspring
+	transaction/impl/basic
 )
