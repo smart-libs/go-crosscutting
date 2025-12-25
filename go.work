@@ -4,7 +4,9 @@ use (
 	assertions/lib
 	assertions/impl/validator/playground
 	converter/lib
+	event/spec/lib
 	serror/lib
+	transaction/spec/lib
 	types/lib
 	types/impl/decimal/shopspring
 )
