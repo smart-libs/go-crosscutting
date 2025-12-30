@@ -32,6 +32,9 @@ var (
 	// IllegalConfig is a type for invalid argument error
 	IllegalConfig = errorx.CommonErrors.NewType("illegal_config")
 
+	NotFoundError  = errorx.CommonErrors.NewType("not_found_error", errorx.NotFound())
+	DuplicateError = errorx.CommonErrors.NewType("duplicate_error", errorx.Duplicate())
+
 	Temporary = errorx.CommonErrors.NewType("temporary_error", errorx.Temporary())
 )
 
@@ -52,7 +55,7 @@ func WrapAsExtError(err error) error {
 }
 
 func IllegalArgumentValue[T any](paramName string, paramValue T) error {
-	return errorx.IllegalArgument.New("Illegal value=[%v] for argument=[%s]", paramName, paramValue)
+	return errorx.IllegalArgument.New("Illegal value=[%v] for argument=[%v]", paramName, paramValue)
 }
 
 func IllegalArgumentValueWithCause[T any](paramName string, paramValue T, causes ...error) error {
@@ -60,12 +63,12 @@ func IllegalArgumentValueWithCause[T any](paramName string, paramValue T, causes
 		return IllegalArgumentValue(paramName, paramValue)
 	}
 	return errorx.WrapMany(errorx.IllegalArgument,
-		fmt.Sprintf("Illegal value=[%v] for argument=[%s]", paramName, paramValue),
+		fmt.Sprintf("Illegal value=[%v] for argument=[%v]", paramName, paramValue),
 		causes...)
 }
 
 func IllegalConfigParamValue[T any](paramName string, paramValue T) error {
-	return IllegalConfig.New("Illegal value=[%v] for config parameter=[%s]", paramName, paramValue)
+	return IllegalConfig.New("Illegal value=[%v] for config parameter=[%v]", paramName, paramValue)
 }
 
 func WrapAsTemporary(err error) error {
