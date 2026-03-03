@@ -2,6 +2,7 @@ package shopspring
 
 import (
 	"encoding/json"
+
 	impl "github.com/shopspring/decimal"
 	"github.com/smart-libs/go-crosscutting/types/lib/pkg/decimal"
 )

@@ -121,9 +121,13 @@ func (m Metadata) Pow(d1, d2 DecimalImpl, options ...decimal.OperationOptions) D
 }
 
 func (m Metadata) Format(d DecimalImpl, options decimal.FormatOptions) string {
+	precision := options.Precision
+	if precision == -1 {
+		precision = d.options.Precision
+	}
 	ac := accounting.Accounting{
 		Symbol:         options.Symbol,
-		Precision:      options.Precision,
+		Precision:      precision,
 		Thousand:       options.Thousand,
 		Decimal:        options.Decimal,
 		Format:         options.Format,
